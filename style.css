@@ -1,0 +1,229 @@
+body{
+    font-family: sans-serif;
+    background-image: url(creative.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.multi_steps{
+    min-height: 100vh;
+}
+.container{
+    width: fit-content;
+    border-radius: 20px;
+}
+/*steps*/
+.img{
+    background-image: url(bg-sidebar-desktop.svg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    color:white;
+    min-height: 500px;
+}
+.div{
+    min-width: 170px;
+}
+.no{
+    border-radius:50% ;
+    border: 1px solid white;
+    padding: 12px 18px;
+    transition: 0.3s;
+
+}
+.no:hover{
+    background-color: white;
+    color:darkgray ;
+    transform: scale(1.2);
+}
+.active{
+    background-color: white;
+    color:darkgray ;
+}
+.steps{
+    font-size: 16px;
+}
+.steps span{
+    color: darkgray;
+}
+/*steps*/
+/*onclicks*/
+
+.onclick{
+    display: none !important;
+}
+.info{
+    background-color: white ;
+}
+@media  (min-width:900px){
+    .info{
+        min-width: 700px;
+        height: 500px;
+    }
+}
+@media  (max-width:900px){
+    .info{
+        min-width: 450px;
+        height: 500px;
+    }
+}
+@media  (max-width:450px){
+    .info{
+        min-width: 300px;
+        text-align: center;
+        margin-bottom: 20px;
+        height: 450px;
+    }
+}
+.title{
+    background: -webkit-linear-gradient( right,#00dbde,#fc00ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 40px;
+    font-weight: bold;
+}
+@media (max-width:450px){
+    .title{
+        padding: 25px 15px !important;
+        font-size: 35px;
+    }
+} 
+.signup input{
+    max-width: 350px;
+    padding: 5px;
+    border: 0px;
+    outline: 0px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.inputs{
+    position: relative;
+    transition: 0.3s;
+    width: fit-content;
+}
+.inputs::before{
+    position: absolute;
+    content:"";
+    left: 0px;
+    bottom: 0px;
+    height: 1px;
+    background-color: #0000004f;
+    transition: 0.3s;
+    width: 100%
+}
+.inputs:hover::before{
+    width: 0;
+}
+.inputs:hover::after{
+    width: 100%;
+}
+.inputs:hover input{
+    background-color: #eff3f4;
+}
+.inputs::after{
+    position: absolute;
+    content:"";
+    right:0px;
+    top: 0px;
+    height: 1px;
+    width: 0px;
+    background-color: #0000004f;
+    transition: 0.3s;
+}
+.next{
+    bottom: 27px;
+    right: 43px;
+    padding: 10px 20px;
+    background: -webkit-linear-gradient( right,#00dbde,#fc00ff);
+    color: white;
+    border-radius: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    width: fit-content;
+}
+.next:hover{
+    transform: scale(1.2);
+    padding-right: 20px !important;
+}
+@media (max-width:450px){
+    .next1{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+/*thanks*/
+.thanks{
+    color: #6e7171;
+}
+.thanks i{
+    font-size: 113px;
+    background: #eff3f4;
+    padding: 50px 57px;
+    border-radius: 50%;
+    position: relative;
+}
+.check{
+    top: -15px;
+    right: -2px;
+    padding: 1px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+h5 span{
+    background: -webkit-linear-gradient(right,#00dbde,#fc00ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 30px;
+}
+@media(max-width:450px){
+    h5 span{
+        font-size:20px;
+    }
+}
+/*login*/
+.login label{
+    color: #6e7171;
+    text-align: start;
+}
+.login .container{
+
+}
+.login input{
+    border: 0px;
+    outline:  0px;
+    padding:  10px;
+}
+.log::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    height: 1px;
+    background-color: #6e7171;
+}
+.loginbt{
+    background: -webkit-linear-gradient(right,#00dbde,#fc00ff);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.loginbt:hover{
+transform: scale(1.2);
+}
+.login button{
+    padding: 12px;
+    border: 0px;
+}
+.login h6{
+    text-align: center;
+    color: #6e7171;
+}
